@@ -17,7 +17,6 @@
         android:src="@drawable/happyicon"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="42dp"
-        android:layout_marginLeft="32dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf = "@+id/gameInstructions"
         />
@@ -25,39 +24,41 @@
 
     <EditText
         android:id="@+id/txtUserGuess"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Enter a number"
+        android:hint="@string/hintString"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuess"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gameInstructions"
-        app:layout_constraintHorizontal_bias="0.47"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGuess" />
+        app:layout_constraintTop_toBottomOf="@+id/gameInstructions" />
 
     <TextView
         android:id="@+id/gameInstructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:labelFor="@id/txtUserGuess"
         android:text="@string/game_instructions"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.SuggestionHighlight"
-        android:textSize="14sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtUserGuess"
         app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/iconImge"
         app:layout_constraintVertical_bias="0.625" />
 
@@ -70,11 +71,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/primaryDarkColor"
         android:onClick="onClickBtnGuess"
         android:text="@string/btn_guess"
         android:textColor="@color/colorTextLight"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUserGuess" />
@@ -84,8 +87,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorPrimary"
         android:longClickable="true"
@@ -94,11 +99,11 @@
         android:text="@string/btn_reset"
         android:textColor="@color/colorTextLight"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuess"
-        app:layout_constraintVertical_bias="0.004"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintVertical_bias="0.019" />
 
 
     <TextView

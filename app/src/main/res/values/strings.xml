@@ -17,6 +17,7 @@
     <string name="img_happy_face">Happy Face</string>
     <string name="img_sad_face">Sad Face</string>
     <string name="img_winner">Winner</string>
+    <string name="hintString">Enter a number between 1 and 1000</string>
 
 
 </resources>
